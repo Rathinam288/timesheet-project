@@ -1,0 +1,12 @@
+.jira-app {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.jira-main {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}

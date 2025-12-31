@@ -1,0 +1,13 @@
+.image {
+    flex: 1;
+     background-color: #4f9c9f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    width: 60%; 
+    color: white;
+}
+

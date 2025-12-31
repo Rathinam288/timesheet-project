@@ -1,0 +1,57 @@
+.employer-app .workflow {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employer-app .allproject {
+  display: var(--display);
+  gap: 20px;
+  align-items: center;
+  text-align: left;
+  background-color: var(--text-color);
+  color: white;
+  box-shadow: var(--shodow);
+  padding: 15px 15px;
+  font-size: 18px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.employer-app .overallcount {
+  text-align: center;
+  margin: 5px;
+}
+
+.employer-app .allproject:hover {
+  transform: scale(1.05);
+  transition: 0.6s ease-in-out;
+  color: black;
+  background: rgb(198, 198, 196);
+}
+
+.employer-app .tasks {
+  display: var(--display);
+  justify-content: space-between;
+}
+
+.employer-app .teams-chart {
+  display: var(--display);
+  margin: 40px 0px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.employer-app .teams-chart .chart {
+  width: 600px;
+  background-color: var(--bg-color);
+  box-shadow: var(--shodow);
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px grey;
+  margin-right: 16%;
+}
+
+.employer-app .overviewtable {
+  width: 100%;
+  margin-bottom: 20px;
+}

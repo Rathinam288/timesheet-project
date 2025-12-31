@@ -1,0 +1,709 @@
+.employee-app .form-container {
+  padding-block: 10%;
+  background-color: #f9f8f8;
+  border-radius: 16px;
+  width: 90%;
+  display: block;
+  min-height: 595px;
+  scale: 0.94;
+  margin-top: -1.37%;
+  margin-left: -1.8%;
+}
+
+.employee-app .leaverathish {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.employee-app .leave-summary {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.employee-app .card {
+  background-color: #e7f0ff;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 27px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.employee-app .card h3 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.employee-app .manager {
+  margin-bottom: 20px;
+}
+
+.employee-app .reporting {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.employee-app .report {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.employee-app .leave-type {
+  margin-bottom: 30px;
+}
+
+.employee-app .leave-detail {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.employee-app .map-leave {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.employee-app .map-leave label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+#leave-leave-card {
+  display: flex;
+  justify-content: space-around;
+  gap: 0;
+}
+
+.employee-app .leave-days-card {
+  background-color: #e7f0ff;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  width: 49.9%;
+  display: block;
+  margin: 20px 0 0 0;
+  font-size: 14px;
+  position: relative;
+}
+
+.employee-app .leave-days-card h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.employee-app .leave-days-card small {
+  font-size: 12px;
+  color: #666;
+}
+
+.employee-app .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.employee-app .minimize-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+.employee-app .from,
+.employee-app .to {
+  margin-top: 15px;
+}
+
+.employee-app .begin,
+.employee-app .leave-to {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.employee-app .leave-duration {
+  margin-top: 12px;
+}
+
+.employee-app .date,
+.employee-app .datas {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.employee-app .map-from {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.employee-app .map-from label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#reason,
+#comment {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  margin-left: 2px;
+}
+
+.employee-app .comment-box {
+  resize: vertical;
+  height: 80px;
+}
+
+.employee-app .decision {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.employee-app .cancel,
+.employee-app .apply-leave {
+  padding: 10px 18px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.employee-app .cancel {
+  background-color: #ccc;
+  color: #333;
+}
+
+.employee-app .apply-leave {
+  background-color: #4caf50;
+  color: white;
+}
+
+.employee-app .thankyou-popup {
+  text-align: center;
+  padding: 40px;
+}
+
+.employee-app .thankyou-img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+.employee-app .thankyou-text {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .employee-app .leave-summary {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .employee-app .card {
+    width: 100%;
+  }
+
+  .employee-app .map-leave,
+  .employee-app .map-from {
+    flex-direction: column;
+  }
+
+  .employee-app .decision {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .employee-app .leave-days-card {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.employee-app .cancel,
+.employee-app .apply-leave {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  background-color: #ddd;
+  color: #333;
+  transition: all 300ms;
+}
+
+.employee-app .cancel:hover {
+  background-color: red;
+  box-shadow: 0 0 10px #000000cc;
+}
+
+.employee-app .apply-leave:hover {
+  background-color: #4ea045;
+  box-shadow: 0 0 10px #000000cc;
+}
+
+.employee-app .time-duration {
+  display: flex;
+  gap: 20px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.employee-app .from-time,
+.employee-app .to-time {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.employee-app .from-time label,
+.employee-app .to-time label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.employee-app .from-time input,
+.employee-app .to-time input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s;
+}
+
+.employee-app .from-time input:focus,
+.employee-app .to-time input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.employee-app .form-container.blurred {
+  filter: blur(2px);
+  pointer-events: none;
+  user-select: none;
+  transition: filter 0.3s ease;
+}
+
+.employee-app .blur-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(3px);
+  z-index: 1000;
+}
+
+.employee-app .form-container {
+  max-width: 97%;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.employee-app .leaverathish {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.employee-app .leave-summary {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.employee-app .card {
+  background-color: #e7f0ff;
+  padding: 16px;
+  border-radius: 10px;
+  margin-bottom: 27px;
+  text-align: center;
+  width: 30%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.employee-app .card h3 {
+  margin-bottom: 15px;
+  color: #444;
+}
+
+.employee-app .manager {
+  margin-bottom: 20px;
+}
+
+.employee-app .reporting {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.employee-app .report {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+.employee-app .leave-type {
+  margin-bottom: 30px;
+}
+
+.employee-app .leave-detail {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 18px;
+}
+
+.employee-app .map-leave {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+}
+
+.employee-app .map-leave label {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  position: relative;
+}
+
+.employee-app .leave-days-card h4 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.employee-app .leave-days-card small {
+  font-size: 12px;
+  color: #666;
+}
+
+.employee-app .leave-details-card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  margin-top: 6%;
+}
+
+.employee-app .card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.employee-app .minimize-icon {
+  font-size: 24px;
+  cursor: pointer;
+  color: #888;
+}
+
+.employee-app .date-range,
+.duration {
+  display: flex;
+  gap: 20px;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.employee-app .duration {
+  margin-top: 5px;
+  font-weight: 600;
+}
+
+.employee-app .error-message {
+  color: #d8000c;
+  background-color: #ffd2d2;
+  padding: 10px 15px;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.employee-app .leave-durat {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+.employee-app .date-range .from,
+.employee-app .date-range .to {
+  flex: 1;
+  min-width: 200px;
+}
+
+.employee-app .begin,
+.employee-app .leave-to {
+  font-weight: 600;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.employee-app .date,
+.employee-app .datas {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.employee-app .map-from {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.employee-app .map-from label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+#reason,
+#comment {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-weight: 600;
+  padding-left: 0px;
+}
+
+.employee-app .comment-box {
+  resize: vertical;
+  height: 80px;
+  font-weight: 500px;
+}
+
+#comments {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+#reasons {
+  width: 100%;
+  padding: 10px;
+  margin-top: 8px;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+.employee-app .decision {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 7%;
+}
+
+.employee-app .cancel,
+.employee-app .apply-leave {
+  padding: 10px 18px;
+  font-size: 15px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+}
+
+.employee-app .cancel {
+  background-color: #ccc;
+  color: #333;
+}
+
+.employee-app .apply-leave {
+  background-color: #4caf50;
+  color: white;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+.employee-app .thankyou-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1001;
+  animation: slideDown 0.5s ease-out;
+}
+
+.employee-app .thankyou-img {
+  width: 100%;
+  display: block;
+}
+
+.employee-app .thankyou-text {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .employee-app .leave-summary {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .employee-app .card {
+    width: 100%;
+  }
+
+  .employee-app .map-leave,
+  .employee-app .map-from {
+    flex-direction: column;
+  }
+
+  .employee-app .decision {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .employee-app .leave-days-card {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.employee-app .cancel,
+.employee-app .apply-leave {
+  flex: 1;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  background-color: #ddd;
+  color: #333;
+  transition: all 300ms;
+}
+
+.employee-app .cancel:hover {
+  background-color: red;
+  box-shadow: 0 0 10px #000000cc;
+}
+
+.employee-app .apply-leave:hover {
+  background-color: #4ea045;
+  box-shadow: 0 0 10px #000000cc;
+}
+
+.employee-app .time-duration {
+  display: flex;
+  gap: 20px;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+
+.employee-app .from-time,
+.employee-app .to-time {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.employee-app .from-time label,
+.employee-app .to-time label {
+  font-weight: 600;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+.employee-app .from-time input,
+.employee-app .to-time input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  background-color: #fff;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: border-color 0.2s;
+}
+
+.employee-app .from-time input:focus,
+.employee-app .to-time input:focus {
+  border-color: #4a90e2;
+  outline: none;
+}
+
+.employee-app .form-container #nav-buttons {
+  position: absolute;
+  z-index: 20;
+  margin-top: -4%;
+}
+
+.employee-app .form-container .expanded {
+  margin-left: 104%;
+}
+
+.employee-app .clanup form {
+  width: 100%;
+}
+
+#form-lb {
+  width: 112%;
+  margin-left: -3.6%;
+  margin-top: 2%;
+  height: 120%;
+  position: absolute;
+}
+
+.employee-app .form-container .collapsed {
+  margin-left: 107%;
+}

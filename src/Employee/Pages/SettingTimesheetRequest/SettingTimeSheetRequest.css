@@ -1,0 +1,119 @@
+.employee-app .Time-Notification {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: transparent;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  border-radius: 12px;
+}
+
+.employee-app .Time-Notification-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+}
+
+.employee-app .Time-Notification-title::after {
+  content: "";
+  width: 60px;
+  height: 4px;
+  background-color: #3b82f6;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+.employee-app .Time-Notification-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-left: 6px solid #3b82f6;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.employee-app .Time-Notification-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.employee-app .Time-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  row-gap: 1rem;
+  column-gap: 1.5rem;
+}
+
+.employee-app .Time-userid,
+.employee-app .Time-timein,
+.employee-app .Time-timeout,
+.employee-app .Time-reason {
+  flex: 1 1 20%;
+  font-size: 0.95rem;
+  color: #374151;
+  line-height: 1.4;
+}
+
+.employee-app .Time-userid {
+  font-weight: 600;
+  color: #111827;
+}
+
+.employee-app .Time-reason {
+  flex: 1 1 100%;
+  font-style: italic;
+  color: #6b7280;
+  padding-top: 0.5rem;
+  border-top: 1px dashed #e5e7eb;
+}
+
+.employee-app .Time-missing {
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 0.3rem 0.7rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  flex: 1 1 120px;
+  text-align: center;
+  background-color: #fef3c7;
+  color: #b45309;
+  border: 1px solid #fde68a;
+}
+
+.employee-app .Time-missing[data-type="IN-TIME"] {
+  background-color: #e0f2fe;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.employee-app .Time-missing[data-type="OUT-TIME"] {
+  background-color: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+@media (max-width: 768px) {
+  .employee-app .Time-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .employee-app .Time-userid,
+  .employee-app .Time-timein,
+  .employee-app .Time-timeout,
+  .employee-app .Time-missing,
+  .employee-app .Time-reason {
+    flex: 1 1 100%;
+  }
+
+  .employee-app .Time-missing {
+    margin-top: 0.5rem;
+  }
+}

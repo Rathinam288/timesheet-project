@@ -1,0 +1,62 @@
+.admin-profile-card {
+  position: absolute;
+  top: 70px;
+  right: 20px;
+  width: 260px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.profile-image {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto 15px;
+  border: 2px solid #223b78;
+}
+
+.profile-name {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.profile-role,
+.profile-email {
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.logout-button,
+.dashboard-button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  background-color: #223b78;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.dashboard-button{
+    background-color: #137a62;
+    margin-top: 10px;
+}
+
+.logout-button:hover {
+  background-color: #1a2f63;
+}

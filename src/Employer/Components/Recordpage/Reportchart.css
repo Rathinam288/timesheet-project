@@ -1,0 +1,70 @@
+.employer-app .card {
+  padding: 16px;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+  font-family: sans-serif;
+  margin: 20px;
+  width: 97%;
+  height: 380px;
+  padding: 40px;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 26px;
+}
+
+.income-summary h2 {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.income-total {
+  font-size: 28px;
+  font-weight: bold;
+  color: #111827;
+  margin: 4px 0;
+}
+
+.income-change {
+  font-size: 14px;
+  color: #16a34a;
+}
+
+.legend {
+  font-size: 12px;
+  text-align: right;
+}
+
+.legend div {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dot.active {
+  background-color: #f97316;
+}
+
+.dot.passive {
+  background-color: #60a5fa;
+}
+
+.dot.business {
+  background-color: #4f46e5;
+}
+
+.chart-container {
+  height: 200px;
+}

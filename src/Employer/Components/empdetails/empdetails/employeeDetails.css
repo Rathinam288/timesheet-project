@@ -1,0 +1,66 @@
+.employer-app * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.employer-app .detail-overall {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: transparent;
+}
+.employer-app #popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  border-radius: 10px;
+  font-weight: bold;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 999;
+  animation: slideDownFade 0.6s ease forwards;
+  height: fit-content;
+}
+
+@keyframes slideDownFade {
+  0% {
+    top: -50px;
+    opacity: 0;
+  }
+  100% {
+    top: 10%;
+    opacity: 1;
+  }
+}
+.employer-app .detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 500px;
+  background-color: white;
+  width: 400px;
+  padding: 25px;
+  border-radius: 20px;
+  gap: 20px;
+  box-shadow: 0px 0px 20px white;
+}
+.employer-app img {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  border: 2px solid #79bd42;
+}
+.employer-app h3 {
+  color: #79bd42;
+  font-size: 18px;
+}
+.employer-app h2 {
+  color: #102557;
+  font-size: 28px;
+}
+.employer-app span {
+  color: #102557;
+}

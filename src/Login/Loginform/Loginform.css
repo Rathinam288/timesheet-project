@@ -1,0 +1,186 @@
+.form {
+  flex: 1;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.login-form {
+  max-width: 500px;
+  padding: 5%;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  background-color: #f2f2f2;
+}
+
+.loginform {
+  display: block;
+  width: 100%;
+  padding: 10px 12px 10px 42px; 
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  transition: all 300ms;
+}
+
+.login-form input {
+  align-items: center;
+}
+
+.login-form label {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  color: #333;
+  font-weight: bold;
+}
+
+.g {
+  position: relative;
+  width: 100%;
+  margin-block: 6.6%;
+  height: 20px !important;
+    width: 380px !important;       
+}
+
+.g .icon {
+  position: absolute;
+  left: 1rem;
+  width: 1rem;
+  height: 1rem;
+  top: 0%;
+  transform: translateY(-50%);
+  color: #0d0c22;
+}
+
+.g .icon1 {
+  position: absolute;
+  right: 1rem;
+  width: 1rem;
+  height: 1rem;
+  top: 10%;
+  transform: translateY(-50%);
+  color: #0d0c22;
+  cursor: pointer;
+}
+
+.errors-message {
+  color: red;
+  font-size: 14px;
+  text-align: center;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .form {
+    padding: 40px;
+  }
+
+  .login-form {
+    width: 70%;
+    max-width: 600px;
+    padding: 6%;
+  }
+
+  .loginform {
+    font-size: 15px;
+    padding: 10px 12px 10px 42px;
+  }
+
+  .login-form label {
+    font-size: 15px;
+  }
+
+  .g {
+    max-width: 100%;
+  }
+
+  .g .icon,
+  .g .icon1 {
+    width: 1.2rem;
+    height: 1.2rem;
+  }
+
+  .errors-message {
+    font-size: 13px;
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .form {
+    padding: 20px;
+  }
+
+  .login-form {
+    width: 90%;
+    padding: 8%;
+  }
+
+  .loginform {
+    font-size: 13px;
+    padding: 9px 11px 9px 40px;
+  }
+
+  .login-form label {
+    font-size: 13px;
+  }
+
+  .g {
+    width: 100%;
+    max-width: 100%;
+    margin-block: 8%;
+  }
+
+  .g .icon,
+  .g .icon1 {
+    width: 1rem;
+    height: 1rem;
+  }
+
+  .errors-message {
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .form {
+    padding: 15px;
+  }
+
+  .login-form {
+    width: 100%;
+    padding: 10%;
+  }
+
+  .loginform {
+    font-size: 12px;
+    padding: 8px 10px 8px 38px;
+  }
+
+  .login-form label {
+    font-size: 12px;
+  }
+
+  .g {
+    width: 50%;
+    max-width: 100%;
+    margin-block: 10%;
+  }
+
+  .g .icon,
+  .g .icon1 {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+
+  .errors-message {
+    font-size: 12px;
+  }
+}
+
+

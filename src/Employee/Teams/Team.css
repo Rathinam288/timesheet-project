@@ -1,0 +1,158 @@
+/* Container */
+.employee-app .kteam-container {
+  padding: 40px 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fb;
+  min-height: 100vh;
+}
+
+/* Section Title */
+.employee-app .kteam-container h2 {
+  text-align: center;
+  color: #003366;
+  font-size: 28px;
+  margin-bottom: 30px;
+}
+
+/* Card container */
+.employee-app .card-view {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Full-width modern card */
+.employee-app .team-card-full {
+  flex: 1 1 50%;
+  max-width: 80%px;
+  border-radius: 12px;
+  box-shadow: inset 4px 10px rgba(62, 61, 61, 0.06),
+    inset 4px 10px rgba(56, 55, 55, 0.06);
+  padding: 20px;
+  background: white;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  color: #131314;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  user-select: none;
+  border: 1px solid #c4f8e5;
+  font-family: "Inter", sans-serif;
+}
+
+.employee-app .team-card-full:hover {
+  transform: scale(1.01);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+/* Header area */
+.employee-app .team-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px;
+}
+
+.employee-app .team-header h4 {
+  font-size: 22px;
+  color: #002244;
+  margin: 0;
+}
+
+.employee-app .team-meta {
+  text-align: right;
+}
+
+.employee-app .team-meta p {
+  margin: 2px 0;
+  font-weight: 600;
+  color: #555;
+}
+
+/* Description block styled like a command box */
+.employee-app .description-box {
+  background: white;
+  border-left: 4px solid #5fe66f;
+  padding: 16px;
+  border: 1px solid #c4f8e5;
+  box-shadow: inset 4px 10px rgba(237, 199, 199, 0.06);
+
+  border-radius: 10px;
+  margin: 20px 0;
+  font-family: "Courier New", Courier, monospace;
+  color: #333;
+  white-space: pre-wrap;
+}
+
+.employee-app .description-box pre {
+  margin: 0;
+}
+
+/* Grid layout for details */
+.employee-app .team-details-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.employee-app .team-details-row p {
+  margin: 6px 0;
+  color: #444;
+  font-size: 15px;
+}
+.employee-app .team-member-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 6px;
+}
+
+.employee-app .team-member-list li {
+  padding: 6px 10px;
+  background: #f9f9f9;
+  margin-bottom: 6px;
+  border-radius: 8px;
+  border-left: 4px solid #007bff;
+}
+
+.employee-app .member-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.employee-app .member-name {
+  font-weight: 600;
+  color: #222;
+}
+
+.employee-app .member-role {
+  font-style: italic;
+  color: #666;
+  margin-left: 12px;
+}
+
+.employee-app .member-status {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  min-width: 75px;
+  text-align: center;
+}
+
+.employee-app .member-status.present {
+  background-color: #d1f2d1;
+  color: #227722;
+}
+
+.employee-app .member-status.absent {
+  background-color: #fcdede;
+  color: #a33;
+}

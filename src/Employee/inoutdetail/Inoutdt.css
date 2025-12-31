@@ -1,0 +1,101 @@
+root {
+  --base-spacing-unit: 34px;
+  --half-spacing-unit: calc(var(--base-spacing-unit));
+
+  --color-alpha: #1772ff;
+  --color-form-highlight: #eeeeee;
+}
+
+.employee-app .containerr,
+.employee-app .containerr:before,
+.employee-app .containerr:after {
+  box-sizing: border-box;
+}
+
+.employee-app .containerr {
+  background-color: white;
+  padding: var(--base-spacing-unit);
+  margin: 0;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.employee-app .containerr {
+  width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: max-content;
+}
+
+.employee-app .form {
+  width: 100%;
+  border: 1px solid var(--color-form-highlight);
+}
+
+.employee-app .form table {
+  width: 100%;
+  table-layout: fixed;
+  border-collapse: collapse;
+  border: 1px solid #213b77;
+}
+
+.employee-app .form th,
+.employee-app .form td {
+  text-align: center;
+  word-wrap: break-word;
+  min-width: 120px;
+  border: 1px solid white;
+}
+
+.employee-app .form th {
+  padding: 20px;
+}
+.employee-app .form td {
+  padding: 10px;
+}
+
+.employee-app .header-item {
+  text-transform: uppercase;
+  background: #79bd42;
+  color: white;
+  padding: 20px;
+}
+
+.employee-app .data {
+  background-color: #213b77;
+  color: white;
+  border: 1px solid white;
+}
+
+.employee-app .filter {
+  color: white;
+  text-decoration: none;
+  position: relative;
+  display: inline-block;
+  padding-left: var(--base-spacing-unit);
+  padding-right: var(--base-spacing-unit);
+}
+
+.employee-app .filter::after {
+  content: "";
+  position: absolute;
+  right: calc(var(--half-spacing-unit) * -1.5);
+  color: white;
+  font-size: var(--half-spacing-unit);
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.employee-app .filter.desc::after {
+  content: "(desc)";
+}
+
+.employee-app .filter.asc::after {
+  content: "(asc)";
+}
+
+.employee-app .filter:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

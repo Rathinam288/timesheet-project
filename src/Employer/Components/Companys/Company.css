@@ -1,0 +1,68 @@
+.employer-app .heading {
+  padding: 20px;
+  text-align: center;
+}
+
+.employer-app .company-navigation-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+}
+
+.employer-app .nav-arrow {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+  color: #333;
+  transition: transform 0.2s;
+}
+
+.employer-app .nav-arrow:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.employer-app .nav-arrow:hover:not(:disabled) {
+  transform: scale(1.2);
+}
+
+.employer-app .company-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  width: 100%;
+  max-width: 1000px;
+  height: 200px;
+}
+
+.employer-app .company-card {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: #f9f9f9;
+}
+
+.employer-app .company-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.employer-app .company-card img {
+  max-width: 100%;
+  max-height: 80px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}

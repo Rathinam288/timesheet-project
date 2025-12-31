@@ -1,0 +1,120 @@
+.employer-app 
+
+   .clientcompanydetails-form {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.employer-app .clientcompanydetails-form h2 {
+  margin-bottom: 25px;
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #333;
+  text-align: center;
+}
+
+.employer-app .clientcompanydetails-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #555;
+  margin-top: 15px;
+}
+
+.clientcompanydetails-form input[type="text"],
+.clientcompanydetails-form input[type="email"],
+.clientcompanydetails-form input[type="date"],
+.employer-app .clientcompanydetails-form input[type="file"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.8px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+.clientcompanydetails-form input[type="text"]:focus,
+.clientcompanydetails-form input[type="email"]:focus,
+.employer-app .clientcompanydetails-form input[type="date"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.employer-app .clientcompanydetails-form input[type="file"] {
+  padding: 4px 8px;
+  font-size: 0.9rem;
+}
+
+.employer-app .clientcompanydetails-form img {
+  margin-top: 10px;
+  border-radius: 6px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employer-app .clientcompanydetails-form-buttons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.clientcompanydetails-submit-btn,
+.employer-app .clientcompanydetails-cancel-btn {
+  padding: 12px 28px;
+  font-weight: 700;
+  border-radius: 8px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.employer-app .clientcompanydetails-submit-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+.employer-app .clientcompanydetails-submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.employer-app .clientcompanydetails-cancel-btn {
+  background-color: #f0f0f0;
+  color: #555;
+}
+
+.employer-app .clientcompanydetails-cancel-btn:hover {
+  background-color: #ddd;
+}
+
+/* ✅ Style for select dropdown */
+.clientcompanydetails-form select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1.8px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #fff;
+  appearance: none; /* removes default browser arrow styling */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23666' viewBox='0 0 16 16'%3E%3Cpath d='M1.5 5l6 6 6-6h-12z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 10px center;
+  background-size: 14px;
+  transition: border-color 0.3s ease;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.clientcompanydetails-form select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.clientcompanydetails-form option {
+  padding: 10px;
+}

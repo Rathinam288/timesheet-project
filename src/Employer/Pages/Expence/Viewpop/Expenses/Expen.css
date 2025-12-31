@@ -1,0 +1,291 @@
+.employer-app .invoice-container {
+  padding: 40px 40px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+}
+.add-btn,
+.add,
+.employer-app .toggle-view-btn {
+  padding: 10px 10px;
+  background-color: #3fe11f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  margin: 10px 10px 0 0;
+  cursor: pointer;
+  font-size: 14px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0 -2px 6px 0 inset;
+  transition: background-color 0.3s ease;
+}
+
+.add-btn:hover,
+.add:hover,
+.employer-app .toggle-view-btn:hover {
+  background-color: #1d4ed8;
+  color: #fff;
+}
+
+.employer-app .invoice-table {
+  width: 100%; 
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 5px 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  table-layout: auto; 
+  word-wrap: break-word;
+}
+
+.employer-app .invoice-table th,
+.employer-app .invoice-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+  font-size: 11px;
+  word-break: break-word;
+  white-space: normal; 
+}
+
+.employer-app .invoice-table th {
+  background-color: #435df1;
+  color: white;
+  font-weight: 600;
+}
+.employer-app .thumbnail {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.employer-app .expenses-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.employer-app .expenses-card {
+  background: #fdfdfd;
+  border: 1px solid #ddd;
+  padding: 15px;
+  width: 320px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.employer-app .expenses-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.employer-app .expenses-cardh4 {
+  margin-top: 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.employer-app .expenses-card p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.employer-app .expenses-card-bill-img {
+  width: 100%;
+  height: 200px;
+  margin-top: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.employer-app .expenses-card-actions {
+  margin-top: 12px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.expenses-card-actions button,
+.employer-app .action-btn {
+  padding: 6px 10px;
+  font-size: 13px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.card-actions button:hover,
+.employer-app .action-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Modal */
+.employer-app .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  backdrop-filter: blur(5px);
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.employer-app .modal {
+  background-color: #fff;
+  width: 90%;
+  max-width: 45%;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), 0 4px 12px rgba(0, 0, 0, 0.1);
+  animation: slideIn 0.3s ease-in-out;
+  color: #333;
+  max-height: 85%;
+}
+
+.employer-app .modal-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 3px 20px; 
+  align-items: start;
+}
+
+.employer-app .modal-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  color: #444;
+  font-weight: 500;
+}
+
+.employer-app .modal-form input,
+.employer-app .modal-form select {
+  margin-top: 1.5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 0px;
+}
+
+.employer-app .modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.employer-app .modal-buttons button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  color: #fff;
+  background-image: linear-gradient(#0dccea, #0d70ea);
+  box-shadow: rgba(0, 0, 0, 0.3) 0 5px 15px;
+}
+
+.employer-app .image-lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.employer-app .image-lightbox img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+}
+
+.employer-app .ack-checkbox {
+  position: relative; 
+
+  padding: 10px 20px;
+  border-radius: 8px;
+ 
+  background-color: #f5f5f5;
+}
+
+.employer-app .filters {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4.6rem;
+  margin-bottom: 1.5rem;
+  padding: 20px 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+}
+
+.filters label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  color: #333;
+  flex: 1 1 200px; 
+  min-width: 400px;
+}
+
+.filters input,
+.filters select {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  background-color: #fff;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.filters input:focus,
+.filters select:focus {
+  outline: none;
+  border-color: #4a90e2;
+  box-shadow: 0 0 4px rgba(74, 144, 226, 0.4);
+}
+
+.employer-app .styled-select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  background-color: #fff;
+  color: #333;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.employer-app .styled-select:focus {
+  border-color: #007bff;
+  outline: none;
+  box-shadow: 0 0 3px #007bff33;
+}
+
+.employer-app .status-option {
+  font-weight: bold;
+}
+.edith3{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}

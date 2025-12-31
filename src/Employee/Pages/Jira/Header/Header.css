@@ -1,0 +1,105 @@
+.jira-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+  height: 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e2e2e2;
+  font-family: Arial, sans-serif;
+}
+
+/* LEFT */
+.left-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.collapse-icon {
+  font-size: 22px;
+  color: #42526e;
+  cursor: pointer;
+}
+
+/* JIRA LOGO */
+.jira-logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #0052cc;
+  cursor: pointer;
+}
+
+.jira-logo svg {
+  font-size: 24px;
+}
+
+/* SEARCH */
+.jira-search-wrapper {
+  display: flex;
+  align-items: center;
+  background-color: #f4f5f7;
+  padding: 6px 10px;
+  border-radius: 4px;
+  width: 900px;              /* 🔥 increased */
+  transition: width 0.2s ease;
+}
+
+
+.search-icon {
+  color: #6b778c;
+  margin-right: 8px;
+  font-size: 18px;
+}
+
+.jira-search {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-size: 14px;
+}
+
+/* RIGHT */
+.right-section {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.jira-create-btn {
+  background-color: #0052cc;
+  color: #ffffff;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.jira-create-btn:hover {
+  background-color: #0065ff;
+}
+
+.header-icon {
+  font-size: 20px;
+  color: #6b778c;
+  cursor: pointer;
+}
+
+/* PROFILE */
+.jira-profile {
+  background-color: #0052cc;
+  color: #ffffff;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  cursor: pointer;
+}

@@ -1,0 +1,171 @@
+.employee-app .Leave-Notification {
+  padding: 2rem;
+  background: transparent;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.employee-app .Leave-Notification-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.employee-app .Leave-Notification-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* Flex layout for data */
+.employee-app .Leave-details {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+/* User info */
+.employee-app .Leave-user {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  flex: 2;
+}
+
+/* From/To dates */
+.employee-app .Leave-from,
+.employee-app .Leave-to {
+  font-size: 1rem;
+  color: #7f8c8d;
+  flex: 1;
+}
+
+/* Status badge */
+.employee-app .Leave-status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 0.5rem 1rem;
+  border-radius: 30px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  transition: background 0.3s, color 0.3s;
+  flex: 1;
+  min-width: 120px;
+  text-align: center;
+  position: relative;
+}
+
+/* Status icons using ::before */
+.employee-app .Leave-status::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* Approved */
+.employee-app .status-approved {
+  background-color: #e6f4ea;
+  color: #2e7d32;
+  border: 1px solid #b2dfdb;
+}
+
+.employee-app .status-approved::before {
+  background-color: #2e7d32;
+}
+
+/* Pending */
+.employee-app .status-pending {
+  background-color: #fff6e6;
+  color: #e67e22;
+  border: 1px solid #ffcf91;
+}
+
+.employee-app .status-pending::before {
+  background-color: #e67e22;
+}
+
+/* Rejected */
+.employee-app .status-rejected {
+  background-color: #fdecea;
+  color: #e74c3c;
+  border: 1px solid #fab1a0;
+}
+
+.employee-app .status-rejected::before {
+  background-color: #e74c3c;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .employee-app .Leave-details {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .employee-app .Leave-user,
+  .employee-app .Leave-from,
+  .employee-app .Leave-to,
+  .employee-app .Leave-status {
+    flex: none;
+    width: 100%;
+    text-align: left;
+  }
+
+  .employee-app .Leave-status {
+    justify-content: flex-start;
+  }
+}
+
+.employee-app .Leave-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin-bottom: 1.8rem;
+  position: relative;
+  padding-left: 0.5rem;
+}
+
+/* Optional underline / accent line */
+.employee-app .Leave-title::after {
+  content: "";
+  display: block;
+  width: 100px;
+  height: 4px;
+  background: #007bff;
+  border-radius: 2px;
+  margin-top: 8px;
+  transition: width 0.3s ease;
+}
+
+/* Hover effect (optional) */
+.employee-app .Leave-title:hover::after {
+  width: 250px;
+}
+
+/* Responsive font sizing */
+@media (max-width: 768px) {
+  .employee-app .Leave-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .employee-app .Leave-title::after {
+    margin: 0.5rem auto 0;
+  }
+}

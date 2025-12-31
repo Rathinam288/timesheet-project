@@ -1,0 +1,327 @@
+.employee-app .upcom1 {
+  border-radius: 10px;
+  margin-right: 0;
+  width: 100%;
+}
+#leave-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  border-radius: 6px;
+  background-color: #f9f8f8;
+  padding: 20px;
+  color: white;
+}
+.employee-app .statu {
+  background-color: white;
+  display: block;
+  align-items: start;
+  border-radius: 10px;
+  margin-left: 8.2%;
+  width: 92%;
+  padding-bottom: 10%;
+  height: 504.1px;
+  overflow-y: scroll;
+}
+.employee-app .statu::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.employee-app .statu {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+.employee-app .sttext {
+  width: 100%;
+  font-size: x-large;
+  margin-bottom: 5%;
+  text-align: center;
+  color: black;
+}
+.employee-app .li {
+  font-family: sans-serif, arial;
+  font-size: 20px;
+  margin-top: 2%;
+  width: 100%;
+  height: 60px;
+  display: flex;
+  gap: 5%;
+  align-items: center;
+  justify-content: center;
+}
+.employee-app .leave-leave-date {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
+.employee-app .leave-but {
+  display: flex;
+  justify-content: center;
+  margin-top: -1%;
+  flex-wrap: wrap;
+}
+#leave-tab {
+  margin-top: 3%;
+  margin-inline: 10%;
+  padding-block: 3%;
+  border-radius: 15px;
+}
+
+#leave-reason {
+  text-align: center;
+  padding-block: 3%;
+}
+
+.employee-app .leave-del-but {
+  cursor: pointer;
+  padding: 12px 20px;
+  border: 2px solid rgb(0, 0, 0);
+  color: red;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all ease 0.3s;
+  scale: 0.5;
+  border-radius: 7px;
+}
+
+.employee-app .leave-del-but:hover {
+  border-radius: 3px;
+  background-color: rgb(255, 68, 68) !important;
+  scale: 0.55;
+  color: white;
+}
+.employee-app .leave-del-but:active {
+  background-color: rgb(255, 38, 38);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.employee-app .leave-approved {
+  color: #79bd42;
+}
+#ed:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+.employee-app .leave-approved:hover {
+  background-color: #a0e765 !important;
+  transition: all 0.5s;
+  color: white;
+}
+.employee-app .leave-pending-but {
+  color: #eb8a51;
+}
+.employee-app .leave-pending-but:hover {
+  background-color: #eb8a51 !important;
+  color: white;
+}
+#ed {
+  margin-left: 90%;
+  margin-top: -5%;
+  transition: all 0.3s;
+}
+
+.employee-app .leave-approved-tab {
+  background-color: rgb(212, 237, 218);
+  border-left: 6px solid green;
+  padding: 1rem;
+  margin: 0.5rem 0px;
+  border-radius: 8px;
+}
+
+#leave-tab button {
+  font-weight: 700;
+  background-color: white;
+  border: none !important;
+}
+
+.employee-app .leave-pending-tab {
+  background-color: rgb(255, 243, 205);
+  border-left: 6px solid orange;
+  margin: 0.5rem 0px;
+  border-radius: 8px;
+}
+.employee-app .leave-rejected-tab {
+  background-color: rgb(248, 215, 218);
+  border-left: 6px solid red;
+  padding: 1rem;
+  margin: 0.5rem 0px;
+  border-radius: 8px;
+}
+
+.employee-app .del-alert {
+  margin: 10px 0;
+  padding: 10px;
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 5px;
+  color: #856404;
+  position: absolute;
+}
+
+.employee-app .reconfirm {
+  text-align: center;
+}
+
+.employee-app .reconfirm p {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.employee-app .reconfirm button {
+  margin-right: 10px;
+  padding: 5px 12px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+#leave-d-b,
+#leave-e-b {
+  scale: 0.65;
+  color: white;
+  background-color: gray !important;
+  text-transform: uppercase;
+}
+#leave-e-b {
+  scale: 0.65;
+  align-items: center;
+}
+#leave-d-b:hover {
+  background-color: red !important;
+}
+#leave-e-b:hover {
+  background-color: #856404 !important;
+}
+.employee-app .filter-icon svg {
+  color: black;
+}
+
+.employee-app .custom-dropdown {
+  cursor: pointer;
+  appearance: none;
+  padding: 8px 5px;
+  text-align: center;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  font-size: 14px;
+  margin-left: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.employee-app .filter-icon {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.employee-app .filter-icon svg {
+  margin-right: 23.5px;
+  top: 25px;
+  scale: 0.75;
+}
+
+.employee-app .down-arrow {
+  position: absolute;
+  margin-left: 100px;
+  pointer-events: none;
+}
+
+#second-down {
+  margin-left: 70%;
+}
+
+.employee-app .filter-i {
+  margin-left: 20px;
+  position: absolute;
+  pointer-events: none;
+}
+
+#first-down {
+  margin-left: 118px;
+}
+.employee-app .sort {
+  margin-left: 150px;
+  position: absolute;
+  pointer-events: none;
+}
+select option:hover {
+  background-color: #2e0357;
+}
+
+.employee-app .sort {
+  margin-left: 170px;
+}
+#second-down {
+  margin-left: 282px;
+}
+
+#leave-d {
+  display: flex;
+  justify-content: center;
+}
+
+.employee-app .filter-icon div {
+  display: flex;
+  align-items: center;
+  width: 30%;
+}
+
+.employee-app .select-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+}
+
+.employee-app .select-icon {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #555;
+  z-index: 2;
+}
+
+.employee-app .select-arrow {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  color: #555;
+  z-index: 2;
+}
+
+.employee-app .custom-dropdown {
+  width: 100%;
+  appearance: none;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 12px;
+  margin-left: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: all 0.4s ease;
+}
+
+.employee-app .custom-dropdown:focus,
+.employee-app .custom-dropdown:hover {
+  outline: none;
+}
+select option {
+  outline: none;
+}
+
+.employee-app .leave-leave-time {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+  margin-top: 2%;
+}

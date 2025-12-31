@@ -1,0 +1,73 @@
+.employee-app .lb-container {
+  padding: 2rem;
+  border-radius: 1rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+  overflow: auto;
+  width: 89%;
+  margin-right: 27px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  font-family: inherit;
+  margin-top: -5.5%;
+  height: 566px;
+}
+
+.employee-app .lb-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.employee-app .lb-table-wrapper {
+  overflow-x: auto;
+}
+
+.employee-app .lb-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.employee-app .lb-table thead {
+  background-color: #1565c0;
+  color: #fff;
+}
+
+.employee-app .lb-table th,
+.employee-app .lb-table td {
+  padding: 1rem;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+.employee-app .lb-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.employee-app .lb-table tbody tr:hover {
+  background-color: #e3f2fd;
+  transition: background-color 0.3s ease-in-out;
+}
+
+@media (max-width: 768px) {
+  .employee-app .lb-table th,
+  .employee-app .lb-table td {
+    font-size: 0.9rem;
+    padding: 0.75rem;
+  }
+
+  .employee-app .lb-container {
+    padding: 1rem;
+  }
+
+  .employee-app .lb-title {
+    font-size: 1.5rem;
+  }
+}

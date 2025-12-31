@@ -1,0 +1,72 @@
+.employer-app .bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-sizing: border-box;
+  flex-direction: column;
+}
+
+.tab {
+  width: 100%;
+  max-width: 1200px;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.2);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #213b77;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.thead {
+  background-color: #79bd42;
+  color: #fff;
+  padding: 16px;
+  text-align: center;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: 1px solid #fff;
+}
+
+.tdata {
+  background-color: #213b77;
+  color: #fff;
+  padding: 12px;
+  text-align: center;
+  font-size: 0.92rem;
+  border: 1px solid #fff;
+  word-wrap: break-word;
+  min-width: 60px;
+}
+
+.emp-img {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #fff;
+}
+.namedate {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.namedate div {
+  padding: 2%;
+}
+.namedate input {
+  text-align: center;
+  scale: 1.1;
+  margin-left: 2%;
+}
+.namedate input::placeholder {
+  text-align: center;
+}

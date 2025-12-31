@@ -1,0 +1,137 @@
+.employer-app .earnings-table-container {
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.earnings-table-container h2 {
+  margin-bottom: 16px;
+  font-size: 24px;
+  color: #333;
+}
+
+.earnings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.earnings-table th,
+.earnings-table td {
+  padding: 15px;
+  border: 1px solid #213b77;
+}
+
+.earnings-table th {
+  background-color: #79bd42;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.earnings-table tr:hover {
+  background-color: #f9f9f9;
+}
+
+.pdf-btn {
+  padding: 10px 20px;
+  background-color: #213b77;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 30px;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.employer-app .modal {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  min-width: 300px;
+}
+
+.employer-app .modal input {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 8px;
+}
+
+.employer-app .modal-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.employer-app .icon-btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+.employer-app .icon-btn {
+  border: none;
+  border-radius: 10px;
+  padding: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.employer-app .icon-btn.download {
+  background-color: #1abc9c;
+}
+
+.employer-app .icon-btn.edit {
+  background-color: #27ae60;
+}
+
+.employer-app .icon-btn.delete {
+  background-color: #e74c3c;
+}
+
+.employer-app .icon-btn:hover {
+  opacity: 0.9;
+}
+.employer-app .tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+.employer-app .tooltip {
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  white-space: nowrap;
+  transition: opacity 0.3s;
+  font-size: 12px;
+}
+.employer-app .tooltip-container:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}

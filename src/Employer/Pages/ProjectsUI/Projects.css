@@ -1,0 +1,199 @@
+.employer-app .project-container {
+  padding: 20px;
+  background: #f7f9fc;
+  height: fit-content;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.employer-app .title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #333;
+}
+
+.employer-app .add-btn {
+  background: #007bff;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.employer-app .add-btn:hover {
+  background: #0056b3;
+}
+
+.employer-app .status-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.status-table th,
+.employer-app .status-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.employer-app .status-table th {
+  background-color: #e9eff5;
+  font-weight: 600;
+  color: #444;
+}
+
+.employer-app .status-table td {
+  font-size: 15px;
+  color: #555;
+}
+
+.employer-app .dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.employer-app .dot-green,
+.progress-fill.dot-green {
+  background: #4caf50;
+}
+.employer-app .dot-yellow,
+.progress-fill.dot-yellow {
+  background: #ff9800;
+}
+.employer-app .dot-blue,
+.progress-fill.dot-blue {
+  background: #2196f3;
+}
+
+.employer-app .progress-bar {
+  background: #ddd;
+  border-radius: 10px;
+  height: 10px;
+  width: 100px;
+  margin: 5px 0;
+}
+
+.employer-app .progress-fill {
+  height: 100%;
+  border-radius: 10px;
+}
+
+.employer-app .progress-text {
+  font-size: 13px;
+  color: #333;
+}
+
+.employer-app .popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.employer-app .popup-form {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  width: 950px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.employer-app .popup-form h2 {
+  margin-top: 0;
+  text-align: center;
+  color: #333;
+}
+
+.popup-form input,
+.employer-app .popup-form select {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.employer-app .form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.employer-app .form-actions button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.employer-app .form-actions button[type="submit"] {
+  background-color: #28a745;
+  color: #fff;
+}
+
+.employer-app .form-actions button[type="button"] {
+  background-color: #dc3545;
+  color: #fff;
+}
+.employer-app .edit-btn,
+.delete-btn {
+  padding: 5px 10px;
+  margin: 2px;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+}
+
+.employer-app .edit-btn {
+  background-color: #3498db;
+}
+
+.employer-app .edit-btn:hover {
+  background-color: #2980b9;
+}
+
+.employer-app .delete-btn {
+  background-color: #e74c3c;
+}
+
+.employer-app .delete-btn:hover {
+  background-color: #c0392b;
+}
+.employer-app .filter-container {
+  margin: 15px 0;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  padding: 10px;
+}
+
+.employer-app .filter-container .filtertText {
+  font-size: 1.1rem;
+  font-weight: bolder;
+}
+
+.employer-app .filter-container .filterOption {
+  font-size: 1.1rem;
+  width: 170px;
+  padding: 7px;
+}

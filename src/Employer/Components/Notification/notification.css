@@ -1,0 +1,125 @@
+
+ .notification-container {
+  position: relative;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.employer-app .notification-icon {
+  cursor: pointer;
+  position: relative;
+  font-size: 20px;
+  color: #333;
+}
+
+.employer-app .notification-count {
+  position: absolute;
+  top: -6px;
+  right: -8px;
+  background: red;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 10px;
+}
+
+.employer-app .notification-dropdown {
+  position: absolute;
+  top: 30px;
+  right: 0;
+  width: 350px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.employer-app .notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+  border-bottom: 1px solid #ddd;
+  background: #f9f9f9;
+}
+
+.employer-app .notification-header h4 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.employer-app .close-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: #888;
+}
+
+.employer-app .mark-btn {
+  width: 100%;
+  padding: 6px;
+  font-size: 12px;
+  background: #eee;
+  border: none;
+  cursor: pointer;
+}
+
+.employer-app .notification-list {
+  max-height: 250px;
+  overflow-y: auto;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.employer-app .notification-list li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+  font-size: 14px;
+}
+
+.employer-app .notification-list li.unseen {
+  background-color: #f0f8ff;
+}
+
+.employer-app .timestamp {
+  font-size: 10px;
+  color: gray;
+  margin-top: 4px;
+}
+
+.employer-app .btn-group {
+  margin-top: 6px;
+  display: flex;
+  gap: 6px;
+}
+
+.employer-app .accept-btn {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.employer-app .reject-btn {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.employer-app .accept-btn:hover {
+  background-color: #218838;
+}
+
+.employer-app .reject-btn:hover {
+  background-color: #c82333;
+}

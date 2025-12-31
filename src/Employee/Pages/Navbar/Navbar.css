@@ -1,0 +1,37 @@
+.employee-app .navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(211 210 210 / 76%);
+  border-radius: 10px;
+  padding: 0px 20px;
+  margin-bottom: 18px;
+}
+
+.employee-app .search {
+  flex: 1;
+}
+
+.employee-app .toggle-wrapper {
+  margin: 0 15px;
+}
+
+.employee-app .toggle-btn {
+  font-size: 20px;
+  padding: 6px 12px;
+  background: #ccc;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.employee-app .nav-icons {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.employee-app .notification-icon,
+.profile-pic {
+  font-size: 20px;
+}

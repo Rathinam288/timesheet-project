@@ -1,0 +1,9 @@
+.employee-app .left-section {
+  display: flex;
+  margin-top: 2.7%;
+}
+.employee-app .right-section {
+  width: 47%;
+  margin-right: 0;
+  margin-top: 55px;
+}

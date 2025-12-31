@@ -1,0 +1,113 @@
+.employer-app .container-settings {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: auto;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.settings h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.settings__container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-between;
+}
+
+.settings__container__item,
+.settings__footer__item {
+  flex: 1 1 45%;
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: var(--item-radius);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+.settings__container__item h2,
+.settings__footer__item h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.settings__container__item label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.settings__container__item select,
+.settings__container__item input {
+  width: 100%;
+  padding: 0.6rem;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+}
+
+.settings__footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+@media (max-width: 768px) {
+  .settings__container {
+    flex-direction: column;
+  }
+  .settings__container__item {
+    flex: 1 1 100%;
+  }
+  .settings__footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+.settings button {
+  margin: 10px;
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: var(--button-radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out, transform 0.1s ease;
+  font-weight: 500;
+}
+
+.comments {
+  width: 700px;
+  height: 130px;
+}
+
+.generalbtn button {
+  margin-top: 250px;
+}
+#comments {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.accbtn button {
+  margin-top: 85px;
+}
+.profile-pic-preview {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin-top: 10px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  margin-left: 35%;
+}

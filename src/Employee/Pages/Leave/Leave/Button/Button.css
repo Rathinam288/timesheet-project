@@ -1,0 +1,33 @@
+.employee-app .btnleave {
+  width: max-content;
+}
+.employee-app .requestbtn {
+  height: 50px;
+  border-radius: 10px;
+  padding-inline: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+  transition: all 0.5s ease-out;
+  font-weight: bolder;
+  background-color: white;
+  position: absolute;
+  margin-left: 51.3%;
+  border: none;
+  color: #79bd42;
+}
+.employee-app .requestbtn:hover {
+  background-color: #79bd42;
+  color: white;
+  border: none;
+}
+a.request {
+  width: 80%;
+  justify-content: end;
+  text-decoration: none;
+  color: white;
+}
+
+.employee-app .requestbtn:active {
+  box-shadow: 5px 5px 10px #147106;
+}

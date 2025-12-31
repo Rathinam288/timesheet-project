@@ -1,0 +1,136 @@
+.employer-app 
+
+.activity-panel {
+  background-color: #1e3a8a;
+  border-radius: 12px;
+  width: 600px;
+  height: 350px;
+  padding: 20px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  color: #fff;
+  margin-top: 0; 
+  overflow: scroll;
+}
+
+.activity-panel::-webkit-scrollbar {
+  display: none; 
+}
+
+
+.activity-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+
+.activity-card {
+  background-color: #f3f4f6;
+  color: #111827;
+  border-radius: 10px;
+  padding: 18px 24px; 
+  margin-bottom: 16px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.activity-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.activity-type {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 6px;
+}
+
+
+.activity-details {
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.activity-user {
+  font-weight: 500;
+  color: #1f2937;
+}
+
+.activity-message {
+  flex: 1;
+  color: #4b5563;
+  text-align: center;
+}
+
+.activity-date {
+  font-weight: 500;
+  color: #2563eb;
+}
+ 
+
+.add-activity-form {
+  margin-top: 20px;
+  background: #f5f5f5;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.add-activity-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.add-activity-form button {
+  padding: 10px 15px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-activity-form button:hover {
+  background-color: #45a049;
+}
+
+.activity-card {
+  border: 1px solid #ccc;
+  border-left: 5px solid black;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: #fff;
+}
+
+.activity-card.green {
+  border-left-color: #28a745;
+}
+
+.activity-card.red {
+  border-left-color: #dc3545;
+}
+.activity-card.green {
+  border-left: 4px solid #28a745;
+  background-color: #eafbea;
+}
+.activity-card.red {
+  border-left: 4px solid #dc3545;
+  background-color: #fdecea;
+}
+.activity-card.red { border-left: 5px solid red; }
+.activity-card.orange { border-left: 5px solid orange; }
+.activity-card.blue { border-left: 5px solid blue; }
+.activity-card.purple { border-left: 5px solid purple; }
+.activity-card.yellow { border-left: 5px solid goldenrod; }
+.activity-card.green { border-left: 5px solid green; }
+.activity-card.mediumvioletred{ border-left: 5px solid mediumvioletred; }
+

@@ -1,0 +1,116 @@
+.employer-app .Appleav {
+  width: 100%;
+  height: 50%;
+  margin-top: 18px;
+  display: block;
+  margin-bottom: 24px;
+}
+.employer-app .App1 {
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 4%;
+}
+.employer-app .Appleav th,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 20px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.employer-app .Appleav table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.employer-app .Appleav th {
+  background-color: #79bd42;
+}
+.employer-app .leave1 {
+  background-color: transparent;
+  text-align: center;
+  justify-content: center;
+  box-shadow: none;
+  margin-bottom: 1%;
+}
+
+.employer-app .settingsnav {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.settingsnav li {
+  margin: 0;
+}
+
+.sett {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  color: #333;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  display: inline-block;
+}
+
+.sett:hover {
+  background-color: #213b77;
+  color: white;
+  border-color: #213b77;
+  cursor: pointer;
+}
+
+/* Status background colors for entire row */
+.employer-app .approved {
+  background-color: #c8e6c9 !important; /* lightgreen */
+}
+
+.employer-app .pending {
+  background-color: #fff9c4 !important; /* lightyellow */
+}
+
+.employer-app .rejected {
+  background-color: #ffcdd2 !important; /* lightcoral */
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+  gap: 15px;
+  font-size: 1rem;
+  margin-bottom: 25px;
+}
+
+.pagination-btn {
+  background-color: #007bff;
+  color: white;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-btn:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-btn:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+.page-info {
+  font-weight: 600;
+  color: #333;
+}
+

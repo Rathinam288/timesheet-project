@@ -1,0 +1,38 @@
+.employer-app :root {
+  --bg-color: #79bd42;
+  --text-color: #223b78;
+  --display: flex;
+}
+
+.employer-app .client-head {
+  display: flex;
+  margin: 40px 20px;
+  align-items: center;
+}
+
+.employer-app .client-btn .addBtn {
+  width: 161px;
+  border-radius: 10px;
+  border: none;
+  box-shadow: 4px 3px 10px grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  font-size: 18px;
+  background: var(--text-color);
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.employer-app .client-btn {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+.employer-app .viewBtns {
+  display: flex;
+}

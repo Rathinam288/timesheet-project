@@ -1,0 +1,10 @@
+.employer-app .logo-wrapper {
+  background-color: white;
+  padding: 6px;
+  border-radius: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 110px;
+  border-radius: 10px;
+}

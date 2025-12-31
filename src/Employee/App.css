@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #79bd42;
+  --text-color: #223b78;
+  --display: flex;
+}
+
+.employee-app .app {
+  display: flex;
+  background: #e2dfdfc3;
+}
+
+.employee-app .main {
+  flex-grow: 1;
+  margin: 10px 30px;
+  width: 50%;
+}
+a {
+  text-decoration: none;
+}
+body.light-theme {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+body.dark-theme {
+  background-color: white;
+}
+
+.employee-app .sidebar {
+  width: 250px;
+  background: #213b77;
+  height: 100vh;
+  transition: width 0.3s ease-in-out;
+}
+
+.employee-app .sidebar.collapsed {
+  width: 0px;
+}
+
+.employee-app .hamburger {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  font-size: 1.8rem;
+  color: white;
+  background: rgb(46, 3, 87);
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.employee-app .main {
+  flex-grow: 1;
+  transition: margin-left 0.3s ease-in-out;
+}

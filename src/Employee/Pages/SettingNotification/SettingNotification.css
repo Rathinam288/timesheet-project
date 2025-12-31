@@ -1,0 +1,31 @@
+.employee-app .LeaveCard,
+.employee-app .TimeRequest,
+.TicketCard {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  margin-bottom: 2rem;
+  transition: all 0.3s ease;
+}
+
+.employee-app .LeaveCard,
+.TicketCard {
+  background: linear-gradient(to bottom right, #f8f9fa, #edf2f7);
+}
+
+.employee-app .TimeRequest {
+  background: linear-gradient(to bottom right, #fdfdfd, #f5f7fa);
+}
+
+@media (max-width: 768px) {
+  .employee-app .LeaveCard,
+  .employee-app .TimeRequest,
+  .employee-app .TicketCard {
+    padding: 1.2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+  }
+}

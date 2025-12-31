@@ -1,0 +1,135 @@
+
+:root {
+  --bg: #f6f8fa;
+  --card-bg: #ffffff;
+  --border: #d0d7de;
+  --text: #1f2328;
+  --muted: #6b7280;
+  --pill-bg: #f1f5f9;
+  --shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  --primary: #2563eb;
+}
+
+/* Board layout */
+.mst-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  padding: 24px;
+  background: #fff;
+}
+
+/* Column container */
+.mst-column {
+  background: #fafafa;
+  border-radius: 8px;
+  padding: 12px;
+  min-height: 320px;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border);
+}
+
+/* Column header */
+.mst-column-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 8px;
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+.mst-col-count {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--muted);
+  background: #e5e7eb;
+  border-radius: 10px;
+  padding: 2px 6px;
+}
+
+/* Cards container */
+.mst-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.mst-cards.drag-over {
+  outline: 2px dashed #cfe1ff;
+  outline-offset: 4px;
+  border-radius: 10px;
+}
+
+/* Task card */
+.mst-task-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 12px;
+  box-shadow: var(--shadow);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.mst-task-card:hover {
+  border-color: #cbd5e1;
+  background: #f9fafb;
+}
+
+.mst-task-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 8px;
+}
+
+.mst-task-key {
+  font-size: 12px;
+  color: var(--muted);
+  margin-left: 6px;
+}
+
+.mst-task-meta {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.mst-pill {
+  background: var(--pill-bg);
+  color: var(--muted);
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 6px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+/* Create row */
+.mst-create-row {
+  margin-top: 4px;
+  background: transparent;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  padding: 8px 4px;
+}
+
+.mst-create-row:hover {
+  text-decoration: underline;
+}
+
+.mst-plus {
+  font-weight: 700;
+  font-size: 16px;
+}

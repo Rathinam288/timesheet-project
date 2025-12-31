@@ -1,0 +1,147 @@
+/* TeamDetails.css */
+.employer-app .team-details {
+  max-width: 1200px;
+  margin: 30px auto;
+  font-family: "Segoe UI", sans-serif;
+  padding: 0 20px;
+  color: #2c3e50;
+  text-align: center;
+}
+
+.employer-app .team-details h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+.employer-app .hierarchy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.employer-app .level {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.employer-app .node {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(19, 18, 18, 0.08);
+  padding: 20px 15px;
+  width: 160px;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.employer-app .node:hover {
+  transform: translateY(-5px);
+}
+
+.employer-app .node img {
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border: 3px solid #121112;
+}
+
+.employer-app .role {
+  font-weight: 600;
+  color: #573afb;
+}
+
+.employer-app .name {
+  font-size: 1rem;
+  color: #020202;
+  margin-top: 5px;
+}
+
+/* Curvy connector */
+.employer-app .connector.curvy::before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 40px;
+  background: #3498db;
+  transform: translateX(-50%);
+  border-radius: 10px;
+}
+
+/* Specific level spacing for better visual separation */
+.employer-app .hierarchy .level:not(:first-child)::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  width: 2px;
+  height: 20px;
+  background-color: #3498db;
+  transform: translateX(-50%);
+}
+
+/* Developer nodes grid */
+.employer-app .level.devs {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/* Project Info Section */
+.employer-app .project-info {
+  margin-top: 50px;
+  text-align: left;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.employer-app .project-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+}
+
+.employer-app #div {
+  flex: 1 1 50%;
+  max-width: 300px;
+  border-radius: 12px;
+  box-shadow: inset 4px 10px rgba(219, 157, 198, 0.06),
+    inset 4px 10px rgba(192, 194, 196, 0.06);
+  padding: 20px;
+  background: white;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  color: #131314;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  user-select: none;
+  border: 1px solid #d8cdcd;
+  font-family: "Inter", sans-serif;
+}
+
+.employer-app .back-button {
+  padding: 20px 22px;
+  background: linear-gradient(135deg, #4caf50 0%, #26db2f 100%);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  box-shadow: 0 8px 15px rgba(46, 125, 50, 0.3);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  margin-right: 580px;
+}
+
+.employer-app .back-button:hover {
+  background: linear-gradient(135deg, #51b856 0%, #41de49 100%);
+  box-shadow: 0 10px 20px rgba(56, 142, 60, 0.4);
+}

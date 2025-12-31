@@ -1,0 +1,43 @@
+.employer-app .teamss {
+  display: flex;
+  flex-direction: column;
+  margin-block: 2%;
+}
+.employer-app #teams-header {
+  margin-bottom: 1%;
+  text-align: center;
+}
+.employer-app #teams-header select {
+  text-align: center;
+  font-size: medium;
+  font-weight: 400;
+  transition: all 300ms;
+  border-radius: 8px;
+  scale: 1.2;
+  margin-left: 1%;
+  margin-block: 3%;
+  padding-inline: 3%;
+}
+.employer-app #teams-header select:focus {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  outline: none;
+  border: none;
+}
+.employer-app #teams-header button {
+  padding: 10px 20px;
+  background-color: #ffffff; /* Bootstrap blue */
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  margin: 5% 0% 0% -18%;
+}
+
+#teams-header button:hover {
+  background-color: #79bd42;
+  color: #ffffff;
+}

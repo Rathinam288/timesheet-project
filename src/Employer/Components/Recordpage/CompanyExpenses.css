@@ -1,0 +1,36 @@
+.employer-app .expense-container {
+  padding: 25px;
+  font-family: Arial, sans-serif;
+  background-color: white;
+  border-radius: 12px;
+  width: 97%;
+  margin: 20px;
+}
+
+.employer-app .expense-table {
+  border-collapse: collapse;
+  margin-top: 25px;
+}
+
+.expense-table th,
+.employer-app .expense-table td {
+  border: 1px solid #213b77;
+  padding: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.employer-app .expense-table th {
+  background-color: #79bd42;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+.employer-app .expense-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.employer-app .expense-table tr:hover {
+  background-color: #eef;
+}

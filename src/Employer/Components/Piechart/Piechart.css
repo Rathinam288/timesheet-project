@@ -1,0 +1,43 @@
+.employer-app .team-performance-card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  max-width: 600px;
+  height: 350px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Title */
+.employer-app .performance-title {
+  text-align: center;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #222;
+}
+
+/* Layout for chart and legend */
+.employer-app .performance-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Legend styles */
+.employer-app .legend-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+  line-height: 2.2;
+  min-width: 180px;
+}
+
+.employer-app .legend-list li {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+}

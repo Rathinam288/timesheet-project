@@ -1,0 +1,443 @@
+.employee-app .profile-container {
+  display: flex;
+  gap: 24px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.employee-app .profile-left {
+  flex: 0 0 32%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.employee-app .profile-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px 16px 32px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  text-align: center;
+  padding-bottom: 3px;
+}
+
+.employee-app .employee-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 16px;
+  border: 4px solid #223b78;
+}
+
+.employee-app .profile-name {
+  color: #223b78;
+  font-size: 1.8rem;
+}
+
+.employee-app .profile-email {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 18px;
+}
+
+.employee-app .button-group {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.employee-app .edit-btn,
+.employee-app .delete-btn {
+  cursor: pointer;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.employee-app .edit-btn {
+  background-color: #3f51b5;
+  color: white;
+}
+
+.employee-app .edit-btn:hover {
+  background-color: #303f9f;
+}
+
+.employee-app .delete-btn {
+  background-color: #e53935;
+  color: white;
+}
+
+.employee-app .delete-btn:hover {
+  background-color: #b71c1c;
+}
+
+.employee-app .profile-summary {
+  background: white;
+  border-radius: 12px;
+  padding: 24px 20px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+  height: 280px;
+  display: flex;
+  flex-direction:column ;
+  gap: 14px;
+}
+
+.employee-app .summary-title {
+  color: #223b78;
+  font-weight: 700;
+  font-size: 1.4rem;
+}
+
+.employee-app .profile-right {
+  flex: 1;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: auto;
+}
+
+.employee-app .profile-table-scroll {
+  overflow-y: auto;
+  max-height: 200vh;
+  width: 100%;
+}
+
+.employee-app .tabledata {
+  padding: 12px 14px;
+  vertical-align: middle;
+}
+
+.employee-app .label {
+  font-weight: 600;
+  width: 40%;
+  color: #555;
+  padding: 15px;
+}
+
+.employee-app .section-header td {
+  background-color: #223b78;
+  color: white;
+  font-size: 1.1rem;
+  padding: 16px 14px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .employee-app .profile-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .employee-app .profile-left,
+  .employee-app .profile-right {
+    flex: unset;
+    width: 100%;
+  }
+
+  .employee-app .profile-table-scroll {
+    max-height: 400px;
+  }
+}
+
+.employee-app .edit-icon-link {
+  float: right;
+  text-decoration: none;
+}
+
+.employee-app .edit-icon {
+  color: #ffffff;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  margin-left: 6px;
+  margin-right: 2px;
+}
+
+.employee-app .edit-icon:hover {
+  color: #ffffff;
+}
+
+.employee-app .image-edit-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.employee-app .photo-edit-icon {
+  position: absolute;
+  top: 4px;
+  right: 8px;
+  background-color: #223b78;
+  border-radius: 50%;
+  padding: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.employee-app .section-title {
+  justify-content: space-between;
+  align-items: center;
+  border: none;
+}
+
+.employee-app .profile-table-scroll {
+  max-height: 90vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.employee-app .profile-table-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.employee-app .profile-header-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.employee-app .profile-header-bar h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #333;
+}
+
+.employee-app .top-download-icon {
+  color: #007bff;
+  background-color: #e8f0ff;
+  padding: 6px 10px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+  display: flex;
+  align-items: center;
+}
+
+.employee-app .top-download-icon:hover {
+  background-color: #d0e7ff;
+}
+
+.employee-app .section-edit-links {
+  margin-top: 2rem;
+}
+
+.employee-app .section-edit-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.employee-app .section-edit-links li {
+  margin: 0.5rem 0;
+}
+
+.employee-app .section-edit-links a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.employee-app .request-button {
+  padding: 8px 16px;
+  background-color: #0077cc;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.employee-app .request-button:hover {
+  background-color: #005fa3;
+}
+
+.employee-app .custom-text-input {
+  padding: 5px;
+  width: 95%;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.employee-app .header-actions-bar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 12px 24px;
+  background-color: #f5f5f5;
+  margin-bottom: 16px;
+  gap: 14px;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.employee-app .admin-logo-button,
+.employee-app .pdf-download-button {
+  text-decoration: none;
+  padding: 8px 16px;
+  font-weight: 600;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.95rem;
+}
+
+.employee-app .admin-logo-button {
+  background-color: #223b78;
+  color: #fff;
+}
+
+.employee-app .admin-logo-button:hover {
+  background-color: #223b78;
+}
+
+.employee-app .pdf-download-button {
+  background-color: #223b78;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.employee-app .education-tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 12px;
+  gap: 10px;
+}
+
+.employee-app .education-tabs button {
+  padding: 6px 16px;
+  border: 1px solid #aaa;
+  background: #f0f0f0;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.2s;
+}
+
+.employee-app .education-tabs .active-tab {
+  background-color: #4caf50;
+  color: white;
+  border-color: #4caf50;
+}
+
+.employee-app .employee-photo {
+  border-radius: 30px;
+}
+
+.employee-app .payslip-download-btn {
+  margin-left: 10px;
+  padding: 6px 10px;
+  background-color: #2b5dab;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  outline: none;
+}
+
+.employee-app .paydownload {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  width: fit-content;
+}
+
+.employee-app tr.marital-status-row td:nth-child(2),
+.employee-app tr.education-row td:nth-child(2),
+.employee-app tr.bank-emergency-row td:nth-child(2) {
+  font-weight: bold;
+}
+
+.employee-app .bold-text {
+  font-weight: bold;
+}
+
+.employee-app .fulltabledetails {
+  width: 100%;
+  font-size: 0.95rem;
+  color: #444;
+  background-color: transparent;
+  border-collapse: collapse;
+}
+
+.employee-app .month-year-dropdown {
+  margin-right: 3px;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: 300;
+  background-color: #223b78;
+  color: white;
+}
+
+.employee-app .payslip-status-label {
+  margin-left: 3px;
+  font-size: 20px;
+  font-style: initial;
+  display: flex;
+  color: black;
+}
+
+.employee-app .section-spacer td {
+  height: 5px;
+  border: none;
+  padding: 0;
+  background-color: #e7e5e5;
+}
+
+.employee-app .tdbodyright {
+  background-color: white;
+}
+
+.employee-app .month-year-input {
+  padding: 6px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.employee-app .selected-label {
+  margin-left: 12px;
+  font-size: 14px;
+  color: #333;
+  border: none;
+}
+
+.employee-app .admin-panel-wrapper {
+  text-align: left;
+  padding-bottom: 8px;
+}
+
+.employee-app .admin-panel-button-top {
+  background-color: #223b78;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.employee-app .section-title-with-button {
+  padding: 10px;
+}
+
+.employee-app .section-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

@@ -1,0 +1,346 @@
+.client-wrapper {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 1rem;
+  font-family: "Segoe UI", sans-serif;
+  color: #2c3e50;
+  background-color: cadetblue;
+  border-radius: 15px;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #1a237e;
+}
+
+.client-thumbnails {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.4rem;
+  margin-bottom: 2rem;
+  margin-left: 10px;
+}
+
+.thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.thumb.active {
+  border: 3px solid #3f51b5;
+  opacity: 1;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(63, 81, 181, 0.5);
+}
+
+.client-main {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  background: #f4f8fb;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: slideFade 0.6s ease-in-out;
+}
+
+.client-info {
+  flex: 1;
+}
+
+.client-info h3 {
+  font-size: 1.8rem;
+  margin: 0;
+  color: #1a237e;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #555;
+  margin: 0.5rem 0;
+}
+
+.tags {
+  margin: 1rem 0;
+}
+
+.tags span {
+  background: #e0ecff;
+  color: #3f51b5;
+  padding: 0.3rem 0.7rem;
+  margin-right: 0.5rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+}
+
+.bio {
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.actions .view {
+  background-color: #3f51b5;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions .view:hover {
+  background-color: #303f9f;
+}
+
+.client-photo img {
+  width: 200px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 4px solid #3f51b5;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 768px) {
+  .client-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .client-photo img {
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
+  }
+
+  .thumb {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Animate thumbnail appearance */
+.thumb {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  animation: fadeInThumbs 0.6s ease-in-out both;
+}
+
+@keyframes fadeInThumbs {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+}
+
+/* Bounce animation for active thumbnail */
+.thumb.active {
+  border: 3px solid #3f51b5;
+  opacity: 1;
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(63, 81, 181, 0.5);
+  animation: bounceIn 0.4s ease forwards;
+}
+
+@keyframes bounceIn {
+  0% {
+    transform: scale(0.95);
+  }
+  60% {
+    transform: scale(1.15);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+/* Client photo entrance */
+.client-photo img {
+  width: 350px;
+  height: 200px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 4px solid #3f51b5;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  animation: fadeInPhoto 0.7s ease-in-out both;
+}
+
+@keyframes fadeInPhoto {
+  0% {
+    opacity: 0;
+    transform: scale(0.9) rotate(-2deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0);
+  }
+}
+
+/* Button hover pulse effect */
+.actions .view {
+  background-color: #3f51b5;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.actions .view:hover {
+  background-color: #303f9f;
+  animation: pulse 0.4s ease-in-out;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Slide and fade already defined */
+@keyframes slideFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+/* Responsive behavior */
+@media (max-width: 768px) {
+  .client-main {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .client-photo img {
+    width: 150px;
+    height: 150px;
+    margin: 1rem auto;
+  }
+
+  .thumb {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Animate on client-main change */
+.client-main {
+  opacity: 0;
+  transform: translateY(10px) scale(0.98);
+  animation: fadeSlideIn 0.6s ease-in-out forwards;
+}
+
+@keyframes fadeSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10px) scale(0.98);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.client-info {
+  animation: fadeInInfo 0.8s ease-in-out;
+}
+
+@keyframes fadeInInfo {
+  0% {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.loadingText {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.loadingText {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 1.2rem;
+  color: #777;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+}
+
+.clientcompanydetails-add-btn {
+  padding: 0.7rem 1.6rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin: 30px 0px 0px 10px;
+  
+}

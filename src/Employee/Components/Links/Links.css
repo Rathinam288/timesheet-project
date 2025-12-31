@@ -1,0 +1,150 @@
+.employee-app .links ul {
+  display: flex;
+  flex-direction: column;
+  margin: 4px 8px; /* reduced spacing */
+  transition-duration: 200ms;
+}
+
+.employee-app .links ul .dash {
+  display: flex;
+  align-items: center;
+  font-size: 14px; /* smaller font */
+  padding: 6px 8px; /* reduced padding */
+  margin: 4px 0; /* tighter vertical gap */
+  text-decoration: none;
+  font-weight: 700;
+  color: white;
+  transition-duration: 150ms;
+  min-height: 32px;
+  border-radius: 6px;
+}
+
+.employee-app .sidebar.collapsed .links .dash {
+  justify-content: center;
+  padding: 10px;
+  scale: 0.9;
+}
+
+/* Compact collapsed sidebar: reduce gaps, padding and icon sizes so all icons fit vertically */
+.employee-app .sidebar.collapsed {
+  padding: 6px;
+}
+.employee-app .sidebar.collapsed .links {
+  padding: 4px 2px;
+}
+.employee-app .sidebar.collapsed .links ul {
+  gap: 6px;
+}
+.employee-app .sidebar.collapsed .links .dash {
+  padding: 6px;
+  margin: 4px 0;
+  min-height: 28px;
+  border-radius: 6px;
+}
+.employee-app .sidebar.collapsed .dash svg {
+  font-size: 18px;
+  min-width: 20px;
+}
+.employee-app .sidebar.collapsed .links span { display: none; }
+
+/* Ensure logout-section sticks to bottom when collapsed and uncollapsed */
+.logout-section { margin-top: auto; padding: 6px 2px; }
+.logout-button { display:flex; align-items:center; gap:8px; padding:6px; }
+.logout-button span { font-weight:700; }
+
+.employee-app .dash svg {
+  font-size: 22px;
+  color: rgb(0, 255, 26);
+  min-width: 24px;
+}
+
+ul {
+  list-style: none;
+}
+
+.employee-app .dash svg {
+  color: rgb(0, 255, 26);
+}
+
+.employee-app .links span {
+  margin-left: 10px; /* tightened label spacing */
+}
+
+.employee-app .links ul .dash:hover {
+  background-color: rgba(240, 248, 255, 0.584);
+  border-radius: 10px;
+}
+
+  .employee-app .links ul {
+    display: flex;
+    flex-direction: column;
+    margin: 4px 8px; /* reduced spacing */
+    transition-duration: 200ms;
+  }
+
+  .employee-app .links ul .dash {
+    display: flex;
+    align-items: center;
+    font-size: 14px; /* smaller font */
+    padding: 6px 8px; /* reduced padding */
+    margin: 6px 2px; /* reduced vertical gap */
+    text-decoration: none;
+    font-weight: 700;
+    color: white;
+    transition-duration: 150ms;
+    min-height: 32px;
+    border-radius: 6px;
+  }
+
+  .employee-app .sidebar.collapsed .links .dash {
+    justify-content: center;
+    padding: 10px;
+    scale: 0.9;
+  }
+
+  .employee-app .dash svg {
+    font-size: 22px;
+    color: rgb(0, 255, 26);
+    min-width: 24px;
+  }
+
+  ul {
+    list-style: none;
+  }
+
+  .employee-app .dash svg {
+    color: rgb(0, 255, 26);
+  }
+
+  .employee-app .links span {
+    margin-left: 10px; /* tightened label spacing */
+  }
+
+  .employee-app .links ul .dash:hover {
+    background-color: rgba(240, 248, 255, 0.584);
+    border-radius: 10px;
+  }
+
+  .logout-section {
+    margin-top: auto;
+    padding: 10px;
+  }
+
+  .logout-button {
+    display: flex;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font: inherit;
+    color: inherit;
+    padding: 10px;
+    width: 100%;
+  }
+
+  .logout-button:hover {
+    background-color: #f2f2f2;
+  }
+
+  /* ensure links area scrolls and panel stays inside sidebar */
+  .links { width: 100%; overflow-y: auto; max-height: calc(100vh - 120px); padding-bottom: 12px; }

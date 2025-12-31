@@ -1,0 +1,131 @@
+.employee-app .leave-policy-container {
+  width: 65%;
+  margin: 50px auto;
+  padding: 20px;
+  background: #f9f9ff;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+}
+
+.employee-app .leave-policy-container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 24px;
+  color: #213b77;
+}
+
+.employee-app .leave-policy-content ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.employee-app .leave-policy-content li {
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.employee-app .acknowledge-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.employee-app .acknowledge-btn:hover {
+  background: #45a049;
+}
+
+.employee-app .thanks-message {
+  text-align: center;
+  margin-top: 20px;
+  color: green;
+  font-weight: bold;
+}
+
+.employee-app .ack-t-cont {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.employee-app .ack-container {
+  flex: 1 1 45%;
+  max-width: 600px;
+  padding: 1rem;
+  background: linear-gradient(135deg, #ffffff, #f5f5f5);
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.employee-app .ack-title {
+  font-size: 1.75rem;
+  color: #2e3c57;
+  margin-bottom: 1rem;
+}
+
+.employee-app .ack-pdf-viewer {
+  width: 100%;
+  max-width: 500px;
+  background: #fff;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  overflow-y: auto;
+}
+
+.employee-app .ack-pdf-page {
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.employee-app .ack-download {
+  margin-top: 1.5rem;
+}
+
+.employee-app .ack-download-button {
+  background-color: #213b77;
+  color: #fff;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.employee-app .ack-download-button:hover {
+  background-color: #1a2f5c;
+}
+.employee-app .iframe-scroll-wrapper {
+  height: fit-content;
+  border-radius: 0.5rem;
+}
+
+.employee-app .ack-pdf-iframe {
+  width: 100%;
+  height: 400px;
+  border: none;
+  display: block;
+}
+
+.employee-app .ack-check {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: max-content;
+}

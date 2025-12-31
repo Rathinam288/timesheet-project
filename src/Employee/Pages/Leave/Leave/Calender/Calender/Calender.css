@@ -1,0 +1,257 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fefdfd;
+}
+.employee-app .date-input-container input {
+  border-radius: 8px;
+  scale: 1.1;
+  padding: 5px 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: 1px solid #ccc;
+  cursor: pointer;
+  font-family: inherit;
+  text-transform: uppercase;
+}
+.employee-app .calendar-container {
+  padding-block: 4.5%;
+  background-color: #f9f8f8;
+  border-radius: 10px;
+  width: 97%;
+  display: block;
+  height: 600px;
+  scale: 0.94;
+  margin-top: -6.4%;
+  margin-left: -1.8%;
+}
+
+/* Header */
+.employee-app .calendar-header {
+  display: flex;
+  margin-bottom: 20px;
+  margin-left: 45%;
+  margin-top: -3%;
+}
+
+.employee-app .selector-container {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+/* Year & Month Controls */
+.employee-app .year-navigation,
+.employee-app .month-navigation {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+.employee-app .year-navigation {
+  margin-left: -101%;
+}
+.employee-app .month-navigation {
+  margin-right: 42%;
+}
+.employee-app .arrow-button {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.employee-app .arrow-button:hover {
+  color: #007bff;
+}
+
+.employee-app .current-month,
+.employee-app .current-year {
+  font-size: 1rem;
+  font-weight: bold;
+}
+.employee-app .filter-container,
+.employee-app .date-input-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-left: 90%;
+}
+
+.employee-app .filter-container label,
+.employee-app .date-input-container label {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+#filter,
+#dateInput {
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  display: flex;
+  flex-direction: end;
+  margin-left: 25vw;
+  width: 10vw;
+}
+#dateInput {
+  margin-left: -20%;
+}
+.employee-app .calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 5px;
+  height: 500px;
+}
+
+.employee-app .calendar-header-item {
+  text-align: center;
+  font-weight: bold;
+  color: #555;
+}
+
+.employee-app .calendar-day {
+  text-align: center;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 70px;
+  width: 100px;
+  margin-left: 7%;
+  border: 1px solid black;
+  transition: all 0.3s ease-in-out;
+}
+.employee-app .calendar-day:hover {
+  scale: 1.1;
+}
+
+.employee-app .calendar-day .day-number {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.employee-app .calendar-day.empty {
+  visibility: hidden;
+}
+
+.employee-app .holiday {
+  color: black;
+  animation: holidayAnimation 1s ease-in-out;
+}
+
+.employee-app .leave {
+  color: green;
+  animation: leaveAnimation 1s ease-in-out;
+}
+
+.employee-app .rejected-leave {
+  color: red;
+  animation: rejectedLeaveAnimation 1s ease-in-out;
+}
+
+.employee-app .selected-day {
+  color: rgb(33, 88, 189);
+}
+
+@keyframes holidayAnimation {
+  0% {
+    background-color: rgba(0, 0, 255, 0.645);
+  }
+  50% {
+    background-color: rgba(251, 253, 250, 0.537);
+  }
+  100% {
+    background-color: rgba(99, 178, 114, 0.526);
+  }
+}
+
+@keyframes leaveAnimation {
+  0% {
+    background-color: rgba(0, 128, 0, 0.8);
+  }
+  50% {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  100% {
+    background-color: rgba(73, 87, 151, 0.8);
+  }
+}
+
+@keyframes rejectedLeaveAnimation {
+  0% {
+    background-color: rgba(200, 30, 30, 0.8);
+  }
+  50% {
+    background-color: rgba(255, 180, 180, 0.7);
+  }
+  100% {
+    background-color: rgba(200, 30, 30, 0.8);
+  }
+}
+
+@keyframes pendingLeaveAnimation {
+  0% {
+    background-color: rgba(255, 180, 180, 0.7);
+  }
+  50% {
+    background-color: rgba(200, 30, 30, 0.8);
+  }
+  100% {
+    background-color: rgba(255, 180, 180, 0.7);
+  }
+}
+
+/* Labels */
+.employee-app .holiday-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: black;
+  margin-top: 5px;
+  display: flex;
+  align-items: flex-end;
+}
+
+.employee-app .day-number {
+  color: black;
+}
+
+.employee-app .leave-label {
+  color: black;
+}
+
+.employee-app .rejected-label {
+  color: #fff0f0;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .employee-app .calendar-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+.employee-app .pending {
+  color: #d5ba66;
+  animation: pendingLeaveAnimation 1s ease-in-out;
+  background-color: transparent;
+}
+
+.employee-app .calendar-day.dimmed {
+  color: #bbb;
+  background-color: rgb(171, 169, 169);
+  opacity: 0.6;
+}
+
+.employee-app .weekend {
+  background-color: #d5cbcb;
+}
+
+.employee-app .cdi-col {
+  margin-left: -10px;
+}

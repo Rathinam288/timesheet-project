@@ -1,0 +1,76 @@
+:root {
+  --bg-color: #79bd42;
+  --text-color: #223b78;
+  --display: flex;
+}
+
+.employee-app .workflow {
+  display: flex;
+  justify-content: space-between;
+}
+.employee-app .numbersofwk {
+  text-align: center;
+}
+
+#as2 svg {
+  font-size: 27px;
+}
+#as3 svg {
+  font-size: 20px;
+}
+#as4 svg {
+  font-size: 25px;
+}
+
+.employee-app .allproject {
+  display: var(--display);
+  gap: 18px;
+  align-items: center;
+  text-align: left;
+  background-color: var(--text-color);
+  color: var(--bg-color);
+  color: white;
+  padding: 20px 25px;
+  font-size: 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  border: none;
+  transition: 0.3s ease-in-out;
+}
+
+.employee-app .allproject:hover {
+  transform: scale(1.1);
+  color: black;
+  background: #ffffff;
+}
+
+.employee-app .tasks {
+  display: var(--display);
+  justify-content: space-between;
+}
+
+/* Teams */
+
+.employee-app .teams {
+  display: var(--display);
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 0px;
+}
+
+
+/* chart style */
+.employee-app .teams .chart {
+  width: 350px;
+  margin-right: 16%;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+}
+
+/* overviewtable */
+.employee-app .overviewtable {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-bottom: 20px;
+}

@@ -1,0 +1,57 @@
+.employer-app .holiday-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #2e0357;
+  border-radius: 15px;
+  padding-block: 5%;
+}
+
+.employer-app #holiday-head {
+  color: white;
+  position: absolute;
+  padding-bottom: 5%;
+}
+
+.employer-app .holiday-card {
+  display: flex;
+  align-items: center;
+  width: 30%;
+  scale: 0.9;
+  margin-top: 5%;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  box-sizing: border-box;
+  transition: transform 0.2s;
+}
+
+.employer-app .holiday-card:hover {
+  transform: scale(1.02);
+}
+
+.employer-app .holiday-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-right: 20px;
+}
+
+.employer-app .holiday-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.employer-app .holiday-name {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.employer-app .holiday-date {
+  margin: 4px 0 0;
+  color: #666;
+  font-size: 14px;
+}

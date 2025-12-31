@@ -1,0 +1,31 @@
+.employee-app .settingsnav {
+  display: flex;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.employee-app .settingsnav li {
+  margin: 0;
+}
+
+.employee-app .sett {
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: #f2f2f2;
+  color: #333;
+  border-radius: 6px;
+  transition: background-color 0.3s, color 0.3s;
+  font-weight: 500;
+  border: 1px solid #ccc;
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.employee-app .sett:hover {
+  background-color: #213b77;
+  color: white;
+  border-color: #213b77;
+}

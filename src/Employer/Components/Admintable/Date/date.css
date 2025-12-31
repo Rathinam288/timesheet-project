@@ -1,0 +1,11 @@
+.employer-app .date-data {
+  padding: 15px;
+  margin-top: 8px;
+  border-radius: 5px;
+  border: 1px solid #2d4a91;
+  width: 150px;
+}
+
+.employer-app .date-container {
+  width: 200px;
+}

@@ -1,0 +1,96 @@
+.employer-app .Record-dash {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.employer-app .box {
+  background-color: #f7f9fc;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employer-app .box h3 {
+  margin: 0 0 10px;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.employer-app .amount-wrapper {
+  font-size: 1.6rem;
+  margin: 0 0 10px;
+  font-weight: bold;
+  position: relative;
+  cursor: pointer;
+}
+
+/* On hover, show data-amount instead of **** */
+.employer-app .amount-wrapper:hover::after {
+  content: attr(data-amount);
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black;
+}
+
+.employer-app .growth {
+  color: green;
+  font-size: 0.9rem;
+}
+
+.revenue,
+.profit,
+.expenses,
+.employer-app .cashflow {
+  background-color: white;
+}
+
+.employer-app .popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.employer-app .popup-box {
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 10px;
+  text-align: center;
+  min-width: 250px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.employer-app .popup-box h3 {
+  margin-bottom: 10px;
+  color: #2c3e50;
+}
+
+.employer-app .popup-box p {
+  font-size: 20px;
+  font-weight: bold;
+  color: #27ae60;
+  margin-bottom: 15px;
+}
+
+.employer-app .close-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.employer-app .close-btn:hover {
+  background-color: #c0392b;
+}

@@ -1,0 +1,79 @@
+[
+  {
+    "date": "14-01-2025",
+    "day": "Tuesday",
+    "holiday": "Pongal",
+    "icon": "pongal",
+    "iconDescription": "A traditional Pongal pot with steam, representing the harvest festival."
+  },
+  {
+    "date": "15-01-2025",
+    "day": "Wednesday",
+    "holiday": "Thiruvalluvar Day",
+    "icon": "poet",
+    "iconDescription": "An open book representing the Tamil poet-saint Thiruvalluvar and his work."
+  },
+  {
+    "date": "16-01-2025",
+    "day": "Thursday",
+    "holiday": "Uzhavar Thirunal",
+    "icon": "gardener",
+    "iconDescription": "A farmer icon representing the farmers' festival."
+  },
+  {
+    "date": "11-02-2025",
+    "day": "Tuesday",
+    "holiday": "Thai Poosam",
+    "icon": "pray",
+    "iconDescription": "A lotus flower symbolizing the spiritual significance of Thai Poosam."
+  },
+  {
+    "date": "31-03-2025",
+    "day": "Monday",
+    "holiday": "Idul Fitr",
+    "icon": "crescent-moon",
+    "iconDescription": "A crescent moon and star representing the Muslim festival Eid."
+  },
+  {
+    "date": "18-04-2025",
+    "day": "Friday",
+    "holiday": "Good Friday",
+    "icon": "good-friday",
+    "iconDescription": "A cross symbolizing Good Friday."
+  },
+  {
+    "date": "01-05-2025",
+    "day": "Thursday",
+    "holiday": "May Day",
+    "icon": "workers",
+    "iconDescription": "A worker helmet representing labor day."
+  },
+  {
+    "date": "15-08-2025",
+    "day": "Friday",
+    "holiday": "Independence Day",
+    "icon": "freedom",
+    "iconDescription": "The Indian national flag representing Independence Day."
+  },
+  {
+    "date": "02-10-2025",
+    "day": "Thursday",
+    "holiday": "Gandhi Jayanthi",
+    "icon": "mahatma-gandhi",
+    "iconDescription": "An outline of Mahatma Gandhi representing Gandhi Jayanthi."
+  },
+  {
+    "date": "20-10-2025",
+    "day": "Monday",
+    "holiday": "Deepavali",
+    "icon": "lamp",
+    "iconDescription": "A diya lamp representing the festival of lights Deepavali."
+  },
+  {
+    "date": "25-12-2025",
+    "day": "Thursday",
+    "holiday": "Christmas",
+    "icon": "christmas-tree",
+    "iconDescription": "A Christmas tree symbolizing Christmas."
+  }
+]

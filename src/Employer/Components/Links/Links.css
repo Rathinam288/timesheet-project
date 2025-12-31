@@ -1,0 +1,81 @@
+.employer-app .links ul {
+  display: flex;
+  flex-direction: column;
+ 
+}
+
+.employer-app .links ul .dash {
+  display: flex;
+  font-size: 20px;
+  padding: 7px;
+  margin: 15px 5px;
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+.employer-app .dash svg {
+  color: rgb(0, 255, 26);
+}
+
+.employer-app .links span {
+  margin-left: 30px;
+}
+
+.employer-app .links ul .dash:hover {
+  background-color: rgba(240, 248, 255, 0.584);
+  border-radius: 10px;
+}
+
+.employer-app .dash {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background 0.3s, color 0.3s;
+}
+
+.employer-app .dash:hover {
+  background-color: #f0f0f0;
+  color: #000;
+}
+
+.employer-app .dash.active {
+  background-color: white;
+  color: black !important;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.employer-app .dash.active svg {
+  color: black;
+}
+
+.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.employer-app .dash {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+  transition: background-color 0.2s;
+  border-radius: 4px;
+}
+
+.dash:hover,
+.employer-app .dash.active {
+  background-color: white;
+}
+
+.employer-app .dash span {
+  white-space: nowrap;
+  transition: opacity 0.2s ease;
+}

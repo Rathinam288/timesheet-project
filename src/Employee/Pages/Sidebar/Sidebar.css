@@ -1,0 +1,71 @@
+.employee-app .iconn {
+  font-size: 24px;
+  color: white;
+}
+
+.employee-app .sidebar {
+  width: 250px;
+  position: sticky;
+  top: 0;
+  transition: width 0.3s ease;
+  box-sizing: border-box;
+}
+
+.employee-app .sidebar-container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  max-height: 400px;
+  color: white;
+  background-color: white;
+}
+
+.employee-app .toggle-icon {
+  position: fixed;
+  top: 12px;
+  left: 12px;
+  cursor: pointer;
+  z-index: 100;
+}
+
+.employee-app .iconn {
+  font-size: 24px;
+  color: white !important;
+  transition: 300ms ease-in-out;
+}
+
+.employee-app .iconn:hover {
+  scale: 1.3;
+}
+
+.employee-app .sidebar.collapsed {
+  width: 100px;
+  padding: 20px 5px;
+  margin-top: 120px;
+}
+
+.employee-app .cross {
+  position: fixed !important;
+  left: 2px !important;
+  top: 30px !important;
+  bottom: 20px !important;
+}
+
+.employee-app .ham {
+  position: fixed !important;
+  bottom: 20px !important;
+  left: 210px !important;
+  top: 160px !important;
+}
+
+#log {
+  width: 5.5%;
+  height: 7%;
+  margin-left: 7px;
+  transition: all 0.2s ease-in-out;
+}
+
+#log:hover {
+  scale: 1.1;
+}

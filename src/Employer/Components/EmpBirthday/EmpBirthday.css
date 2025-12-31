@@ -1,0 +1,37 @@
+.employer-app .upcoming-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.employer-app .upcoming-card {
+  flex: 1 1;
+  min-width: 450px;
+  background: #f9f9f9;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-bottom: 50px;
+  line-height: 27px;
+}
+
+.employer-app .upcoming-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: black;
+}
+
+.employer-app .upcoming-card ul {
+  list-style: none;
+  padding-left: 0;
+  font-weight: 600;
+  font-size: 22px;
+}
+
+.employer-app .upcoming-card li {
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+  color: #213b77;
+}

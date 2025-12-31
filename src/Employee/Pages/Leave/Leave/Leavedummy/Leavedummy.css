@@ -1,0 +1,7 @@
+.employee-app .leaveid {
+  width: 100%;
+  padding-right: 1%;
+  display: flex;
+  padding-top: 2px;
+  justify-content: end;
+}
